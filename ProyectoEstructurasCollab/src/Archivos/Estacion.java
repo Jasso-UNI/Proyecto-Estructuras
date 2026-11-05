@@ -8,8 +8,6 @@ package Archivos;
  *
  * @author josem
  */
-
-
 public class Estacion {
     private final String id;
     private String nombre;
@@ -25,16 +23,39 @@ public class Estacion {
         this.zona = zona;
         this.capacidad = capacidad;
     }
+    public String getId() { 
+        return id; 
+    }
+    public String getNombre() { 
+        return nombre; 
+    }
+    public String getLinea() { 
+        return linea; 
+    }
+    public String getZona() { 
+        return zona; 
+    }
+    public int getCapacidad() { 
+        return capacidad; 
+    }
+    public int getIndice() { 
+        return indice; 
+    }
+    public void setNombre(String nombre) { 
+        this.nombre = nombre; 
+    }
+    public void setLinea(String linea) { 
+        this.linea = linea; 
+    }
+    public void setZona(String zona) { 
+        this.zona = zona; 
+    }
+    public void setCapacidad(int capacidad) { 
+        this.capacidad = capacidad; 
+    }
 
-    public String getId() { return id; }
-    public String getNombre() { return nombre; }
-    public String getLinea() { return linea; }
-    public String getZona() { return zona; }
-    public int getCapacidad() { return capacidad; }
-    public int getIndice() { return indice; }
-    
-    public void setNombre(String nombre) { this.nombre = nombre; }
-    public void setLinea(String linea) { this.linea = linea; }
-    public void setZona(String zona) { this.zona = zona; }
-    public void setCapacidad(int capacidad) { this.capacidad = capacidad; }
+    @Override
+    public String toString() {
+        return id + " - " + nombre;
+    }
 }

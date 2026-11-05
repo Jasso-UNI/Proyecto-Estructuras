@@ -38,7 +38,7 @@ public class Hash {
         for (int i = 0; i < clave.length(); i++) {
             hash = hash * 31 + clave.charAt(i);
         }
-        return Math.abs(hash) % cubetas.length;
+        return (hash & 0x7FFFFFFF) % cubetas.length; // máscara: evita el error de Math.abs(Integer.MIN_VALUE)
     }
 
     private String normalizar(String clave) {
@@ -129,5 +129,16 @@ public class Hash {
 
     public int getTamano() {
         return tam;
+    }
+
+
+    public Lista<Estacion> valores() {
+        Lista<Estacion> resultado = new Lista<>();
+        for (int i = 0; i < cubetas.length; i++) {
+            for (NodoHash n = cubetas[i]; n != null; n = n.sig) {
+                resultado.agregar(n.valor);
+            }
+        }
+        return resultado;
     }
 }
