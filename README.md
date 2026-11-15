@@ -66,5 +66,9 @@ E02,Pérez Bonalde,Línea 1,Oeste,4000
 
 Estacion_Origen,Estacion_Destino,Tiempo
 E01,E02,4
+```
+---
 
-## COMENTARIO EXTRA SOBRE LA ENTREGA
+## COMENTARIO SOBRE ENTREGA FINAL
+
+Para la entrega final, se sobreescribió la última carpeta contenedora de los archivos del proyecto que estaba presente en el repositorio. Esto con el motivo de organizar correctamente el repositorio con los archivos finales modificados y ajustados. Además de esto, se eliminó la imagen png del boceto/modelo inicial de las interfaces y su flujo.
