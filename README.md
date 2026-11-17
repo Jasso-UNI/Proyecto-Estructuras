@@ -1,6 +1,6 @@
 # UrbanRoute — Sistema de Gestión y Análisis de Red de Transporte Multimodal
 
-Aplicación de escritorio desarrollada en **Java (Swing)** para modelar, visualizar y analizar una red de transporte urbano multimodal (basada en el Metro de Caracas) como un **grafo ponderado no dirigido**. Todas las estructuras de datos en memoria y los algoritmos de grafos están implementados desde cero, sin utilizar colecciones estándar de `java.util`.
+Aplicación de escritorio desarrollada en **Java with Ant** (versión Apache NetBeans IDE 31 y JDK 27) para modelar, visualizar y analizar una red de transporte urbano multimodal (basada en el Metro de Caracas) como un **grafo ponderado no dirigido**. Todas las estructuras de datos en memoria y los algoritmos de grafos están implementados desde cero, sin utilizar colecciones estándar de `java.util`.
 
 ## Integrantes
 
